@@ -4,7 +4,12 @@ Excercise implementation of a CoreMediaIO DAL plugin for creating a virtual webc
 
 The plugin serves frames as a virtual webcam to host software (QuickTime, OBS, Chrome, etc)
 
-# Running
+# IMPORTANT
+
+Apple dropped support for CMIO DAL plugins, they will only run on macOS <= 13 so unless you are running an oldie like me (Catalina 🤘) there's no point on playing with these tools naymore.
+
+
+## Running
 
 Build in Xcode
 Right click `CMIOMinimalSample.plugin` in Xcode's 'Products' folder and choose 'Show in Finder'
@@ -14,7 +19,6 @@ Watch the logs in Console.app for any logs prefixed with `CMIOMS`
 
 You may also need to change the codesigning to use your own personal developer identity.
 
-Take a look at [Cameo](https://github.com/lvsti/Cameo) by @lvsti. It allows you to inspect DAL plugins and see all their properties at a glance. 
 
 
 ## Credits
